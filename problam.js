@@ -1,6 +1,4 @@
 // Write a function to convert temperature from Celsius to Fahrenheit.
-// ফারেনহাইট = (সেলসিয়াস × ৯ ÷ ৫) + ৩২
-
 function convert(Celsius){
     let Fahrenheit = ( Celsius * 9 / 5 ) + 32;
     return Fahrenheit;
@@ -9,6 +7,7 @@ let Fahrenheit = convert(12);
 console.log(Fahrenheit)
 
 console.log("-----------------------");
+
 // Task-2:
 // You are given an array of numbers. Count how many times the a number is repeated in the array.
 // 
@@ -31,6 +30,9 @@ let find = 5;
 console.log(countOccurrences(numbers, find)); 
 
 console.log("-----------------------");
+
+
+// Task --3 
 // Write a function to count the number of vowels in a string
 
 function vowelsChaker(yourText){
@@ -45,10 +47,27 @@ function vowelsChaker(yourText){
 
 let text = "I Love Bangladesh"
 console.log(vowelsChaker(text));
+
 console.log("--------------------------")
 
-/**
+/** Task --4
 rite a function to find the longest word in a given string.
  sample-input: 
  I am learning Programming to become a programmer
 sample-output: Programming*/
+
+function longestWord(str) {
+    let words = str.split(" ");
+    
+    let longestWord = words[0];
+    for (let word of words) {
+        if (word.length > longestWord.length) {
+            longestWord = word;
+        }
+    }
+    return longestWord;
+}
+let sentence = "I am learning Programming to become a programmer";
+console.log(longestWord(sentence)); 
+
+console.log("-----------------------");
