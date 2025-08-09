@@ -46,7 +46,7 @@ function vowelsChaker(yourText){
 }
 
 let text = "I Love Bangladesh"
-console.log(vowelsChaker(text));
+console.log(vowelsChaker(text)); 
 
 console.log("--------------------------")
 
@@ -71,3 +71,11 @@ let sentence = "I am learning Programming to become a programmer";
 console.log(longestWord(sentence)); 
 
 console.log("-----------------------");
+
+
+// Task-5: 
+// Generate a random number between 10 to 20.
+
+
+let randomNumber = Math.floor(Math.random() * (20 - 10 + 1)) + 10;
+console.log(randomNumber);
